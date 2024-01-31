@@ -86,6 +86,7 @@ from cvxpy.settings import (
     PDLP as PDLP,
     PIQP as PIQP,
     PROXQP as PROXQP,
+    QPALM as QPALM,
     ROBUST_KKTSOLVER as ROBUST_KKTSOLVER,
     RUST_CANON_BACKEND as RUST_CANON_BACKEND,
     SCIP as SCIP,

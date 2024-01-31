@@ -75,6 +75,8 @@ The table below shows the types of problems the supported solvers can handle.
 +----------------+----+----+------+-----+-----+-----+-----+
 | `PROXQP`_      | X  | X  |      |     |     |     |     |
 +----------------+----+----+------+-----+-----+-----+-----+
+| `QPALM`_       | X  | X  |      |     |     |     |     |
++----------------+----+----+------+-----+-----+-----+-----+
 | `PDLP`_        | X  |    |      |     |     |     |     |
 +----------------+----+----+------+-----+-----+-----+-----+
 | `CPLEX`_       | X  | X  | X    |     |     |     | X   |
@@ -720,6 +722,20 @@ Here is the complete list of solver options.
 
     For others see `PIQP documentation <https://predict-epfl.github.io/piqp/interfaces/settings>`_.
 
+.. info:: `QPALM`_ options:
+   :collapsible:
+
+    ``'max_iter'``
+        maximum number of iterations (default: 1000).
+
+    ``'eps_abs'``
+        absolute accuracy (default: 1e-8).
+
+    ``'eps_rel'``
+        relative accuracy (default: 1e-9).
+
+    For others see `QPALM documentation <https://kul-optec.github.io/QPALM/Doxygen/structQPALMSettings.html>`_.
+
 Custom Solvers
 ------------------------------------
 Although ``cvxpy`` supports many different solvers out of the box, it is also possible to define and use custom solvers. This can be helpful in prototyping or developing custom solvers tailored to a specific application.
@@ -780,3 +796,4 @@ will be the same as the class variable ``SUPPORTED_CONSTRAINTS``.
 .. _CLARABEL: https://oxfordcontrol.github.io/ClarabelDocs/
 .. _PIQP: https://predict-epfl.github.io/piqp/
 .. _PROXQP: https://github.com/simple-robotics/proxsuite
+.. _QPALM: https://kul-optec.github.io/QPALM/Doxygen/index.html
